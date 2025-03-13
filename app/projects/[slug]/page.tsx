@@ -35,7 +35,7 @@ const projects = {
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const { slug } = params
   const project = projects[slug as keyof typeof projects]
-  const { bgColor } = useColorTheme()
+  const bgColor = project.bgColor
 
   if (!project) {
     return (
