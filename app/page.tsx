@@ -31,7 +31,7 @@ export default function Home() {
             <Link href="/about" className="block">
               <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/image.png"
                   alt="About Me"
                   width={500}
                   height={500}
@@ -46,12 +46,12 @@ export default function Home() {
           <div>
             <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow aspect-square">
               <div className="grid grid-cols-2 gap-3 p-4 h-full">
-                <AppIcon title="iDigest" icon="🥕" bgColor="bg-[#e0f5e9] dark:bg-[#1a3b2a]" href="/projects/idigest" />
+                <AppIcon title="Bubble Sparkle" icon="✨" bgColor="bg-[#e0f5e9] dark:bg-[#1a3b2a]" href="/projects/bubblesparkle" />
                 <AppIcon
-                  title="Inkberry"
+                  title="Bubble Sparkle"
                   icon="🫐"
                   bgColor="bg-[#f9f3e5] dark:bg-[#3b3020]"
-                  href="/projects/inkberry"
+                  href="/projects/bubblesparkle"
                 />
                 <AppIcon title="MiniHog" icon="🦔" bgColor="bg-[#d9e8f5] dark:bg-[#1e2a3b]" href="/projects/minihog" />
                 <AppIcon title="Tuna" icon="🐟" bgColor="bg-[#e5d9c0] dark:bg-[#3b2e1a]" href="/projects/tuna" />
