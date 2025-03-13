@@ -40,7 +40,7 @@ export function ColorThemeProvider({ children }: { children: React.ReactNode }) 
 
   useEffect(() => {
     // Check if dark mode is active
-    const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+    // const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
     const isDark = document.documentElement.classList.contains("dark")
     setIsDarkMode(isDark)
 

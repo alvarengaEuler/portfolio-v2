@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 import { Mono } from "@/lib/fonts"
 import ThemeToggle from "@/components/theme-toggle"
@@ -23,7 +24,8 @@ export default function AboutPage() {
         <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-8 md:p-12 transition-colors duration-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <img src="/placeholder.svg?height=400&width=400" alt="About Me" className="w-full rounded-2xl" />
+              <Image src="/placeholder.svg?height=400&width=400" alt="About Me" className="w-full rounded-2xl"  width={500}
+                  height={500} />
             </div>
             <div>
               <h1 className={`${Mono.className} text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white`}>

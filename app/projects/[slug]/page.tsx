@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 import { Mono } from "@/lib/fonts"
 import ThemeToggle from "@/components/theme-toggle"
@@ -78,10 +79,12 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-8 md:p-12 transition-colors duration-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className={`${project.bgColor} rounded-2xl p-8 flex items-center justify-center aspect-square`}>
-              <img
+              <Image
                 src={project.imageUrl || "/placeholder.svg"}
                 alt={project.title}
                 className="w-3/4 h-3/4 object-contain"
+                width={500}
+                height={500}
               />
             </div>
             <div>

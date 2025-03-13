@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Mono } from "@/lib/fonts"
 import ThemeToggle from "@/components/theme-toggle"
 import { useColorTheme } from "@/components/color-theme-provider"
@@ -29,9 +30,11 @@ export default function Home() {
           <div>
             <Link href="/about" className="block">
               <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <img
+                <Image
                   src="/placeholder.svg?height=500&width=500"
                   alt="About Me"
+                  width={500}
+                  height={500}
                   className="w-full aspect-square object-cover"
                 />
               </div>
@@ -156,10 +159,12 @@ export default function Home() {
 
         {/* Footer Banner */}
         <div className="mt-12 rounded-3xl overflow-hidden shadow-sm">
-          <img
+          <Image
             src="/placeholder.svg?height=200&width=1000&text=🐋"
             alt="Footer Banner"
             className="w-full h-32 object-cover"
+            width={500}
+            height={500}
           />
         </div>
       </div>
@@ -181,7 +186,8 @@ function ProjectCard({ title, imageUrl, bgColor, href }: ProjectCardProps) {
         <div
           className={`${bgColor} rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow aspect-square flex items-center justify-center`}
         >
-          <img src={imageUrl || "/placeholder.svg"} alt={title} className="w-3/4 h-3/4 object-contain" />
+          <Image src={imageUrl || "/placeholder.svg"} alt={title} className="w-3/4 h-3/4 object-contain"  width={500}
+                  height={500} />
         </div>
         <p className={`${Mono.className} text-center mt-2 text-black dark:text-white`}>{title}</p>
       </Link>
