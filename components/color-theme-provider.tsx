@@ -94,6 +94,11 @@ export function ColorThemeProvider({ children }: { children: React.ReactNode }) 
     }
   }, [])
 
+  useEffect(() => {
+    document.body.style.setProperty("--bg-color-page", bgColor)
+  } , [bgColor])
+
+
   // Update color when dark mode changes
   useEffect(() => {
     const colorIndex = Number.parseInt(localStorage.getItem("colorIndex") || "0")
