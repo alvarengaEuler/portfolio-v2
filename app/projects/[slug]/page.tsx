@@ -10,12 +10,12 @@ import { useParams } from "next/navigation"
 
 // This would typically come from a CMS or database
 const projects = {
-  idigest: {
-    title: "iDigest",
+  bubblesparkle: {
+    title: "Bubble Spark",
     description: "A recipe app that helps you find recipes based on ingredients you have.",
     longDescription:
       "iDigest is a web application that helps users find recipes based on the ingredients they have at home. It uses a sophisticated algorithm to match ingredients with recipes and provides nutritional information for each recipe.",
-    imageUrl: "/placeholder.svg?height=400&width=400&text=🥕",
+    imageUrl: "/placeholder.svg?height=400&width=400&text=✨",
     bgColor: "bg-[#e0f5e9] dark:bg-[#1a3b2a]",
     link: "https://idigest.example.com",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
@@ -35,7 +35,7 @@ const projects = {
 
 export default function ProjectPage(){
   const params = useParams<{ slug: string }>()
- {
+
   const { slug } = params
   const project = projects[slug as keyof typeof projects]
   const { bgColor } = useColorTheme()
