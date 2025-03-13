@@ -6,6 +6,7 @@ import { ArrowLeft } from "lucide-react"
 import { Mono } from "@/lib/fonts"
 import ThemeToggle from "@/components/theme-toggle"
 import { useColorTheme } from "@/components/color-theme-provider"
+import { useParams } from "next/navigation"
 
 // This would typically come from a CMS or database
 const projects = {
@@ -32,7 +33,9 @@ const projects = {
   // Other projects...
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default function ProjectPage(){
+  const params = useParams<{ slug: string }>()
+ {
   const { slug } = params
   const project = projects[slug as keyof typeof projects]
   const { bgColor } = useColorTheme()
