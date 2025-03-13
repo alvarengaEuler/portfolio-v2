@@ -23,7 +23,7 @@ const projects = {
     title: "Inkberry",
     description: "A minimalist note-taking app with markdown support.",
     longDescription:
-      "Inkberry is a clean, minimalist note-taking application that supports markdown formatting. It's designed for writers, students, and professionals who want a distraction-free writing environment with powerful organization features.",
+      "Inkberry is a clean, minimalist note-taking application that supports markdown formatting. It&apos;s designed for writers, students, and professionals who want a distraction-free writing environment with powerful organization features.",
     imageUrl: "/placeholder.svg?height=400&width=400&text=🫐",
     bgColor: "bg-[#f9f3e5] dark:bg-[#3b3020]",
     link: "https://inkberry.example.com",
@@ -54,7 +54,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               Project Not Found
             </h1>
             <p className={`${Mono.className} text-black dark:text-gray-200 mb-6`}>
-              The project you're looking for doesn't exist or has been removed.
+              The project you&apos;re looking for doesn&apos;t exist or has been removed.
             </p>
             <Link href="/" className={`${Mono.className} text-black dark:text-white underline`}>
               Return to home

@@ -44,6 +44,7 @@ export default function ContactForm() {
         message: "",
       })
     } catch (error) {
+      console.warn("Error sending message", error);
       toast({
         title: "Something went wrong",
         description: "Your message couldn't be sent. Please try again later.",

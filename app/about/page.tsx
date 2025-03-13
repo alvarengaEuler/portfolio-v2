@@ -32,13 +32,13 @@ export default function AboutPage() {
                 Euler Alvarenga
               </h1>
               <div className={`${Mono.className} space-y-4 text-black dark:text-gray-200`}>
-                <p>Hi! I'm a software engineer who loves building fun and useful applications.</p>
+                <p>Hi! I&apos;m a software engineer who loves building fun and useful applications.</p>
                 <p>
                   I specialize in frontend development with React and Next.js, but I also enjoy working on full-stack
                   projects.
                 </p>
-                <p>When I'm not coding, you can find me reading, hiking, or trying out new recipes.</p>
-                <p>Feel free to check out my projects or get in touch if you'd like to collaborate!</p>
+                <p>When I&apos;m not coding, you can find me reading, hiking, or trying out new recipes.</p>
+                <p>Feel free to check out my projects or get in touch if you&apos;d like to collaborate!</p>
               </div>
 
               <div className="mt-8">
