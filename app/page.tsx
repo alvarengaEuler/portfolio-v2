@@ -122,13 +122,14 @@ export default function Home() {
           <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
             <SocialCard
               title="Instagram"
-              icon="📸"
+              imageUrl="/instagram.png?height=500&width=500"
               bgColor="bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]"
               href="https://instagram.com/yourusername"
             />
             <SocialCard
               title="TikTok"
               icon="🎵"
+              imageUrl="/tiktok.png?height=500&width=500"
               bgColor="bg-black"
               href="https://tiktok.com/@yourusername"
               textColor="text-white"
@@ -136,13 +137,15 @@ export default function Home() {
             <SocialCard
               title="YouTube"
               icon="🎬"
-              bgColor="bg-[#FF0000]"
+              imageUrl="/youtube.png?height=500&width=500"
+              bgColor="bg-[#fff]"
               href="https://youtube.com/@yourusername"
               textColor="text-white"
             />
             <SocialCard
               title="GitHub"
               icon="💻"
+              imageUrl="/github.png?height=500&width=500"
               bgColor="bg-[#333333]"
               href="https://github.com/yourusername"
               textColor="text-white"
@@ -150,6 +153,7 @@ export default function Home() {
             <SocialCard
               title="LinkedIn"
               icon="👔"
+              imageUrl="/linkedin.png?height=500&width=500"
               bgColor="bg-[#0077B5]"
               href="https://linkedin.com/in/yourusername"
               textColor="text-white"
@@ -197,20 +201,27 @@ function ProjectCard({ title, imageUrl, bgColor, href }: ProjectCardProps) {
 
 interface SocialCardProps {
   title: string
-  icon: string
+  imageUrl?: string
+  icon?: string
   bgColor: string
   href: string
   textColor?: string
 }
 
-function SocialCard({ title, icon, bgColor, href, textColor = "text-black" }: SocialCardProps) {
+function SocialCard({ title, imageUrl, icon = "🐋", bgColor, href, textColor = "text-black" }: SocialCardProps) {
   return (
     <div>
       <a href={href} target="_blank" rel="noopener noreferrer" className="block">
         <div
           className={`${bgColor} rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all hover:scale-105 aspect-square flex items-center justify-center`}
         >
-          <div className="text-3xl">{icon}</div>
+          {imageUrl 
+          ? <Image src={imageUrl} alt={title} className=" w-4/5 h-4/5 fill "  width={500}
+          height={500} />
+          :
+           <div className="text-3xl">{icon}</div>
+          }
+          
         </div>
         <p
           className={`${Mono.className} text-center mt-2 ${textColor === "text-white" ? "text-white" : "dark:text-white " + textColor}`}

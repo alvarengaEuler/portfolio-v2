@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-8 md:p-12 transition-colors duration-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <Image src="/placeholder.svg?height=400&width=400" alt="About Me" className="w-full rounded-2xl"  width={500}
+              <Image src="/image.png?height=400&width=400" alt="About Me" className="w-full rounded-2xl"  width={500}
                   height={500} />
             </div>
             <div>
