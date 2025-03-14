@@ -76,13 +76,13 @@ export default function Home() {
             href="/projects/monthly"
           />
           <div className="col-span-2 md:col-span-1">
-            <Link href="/projects/build-apps" className="block">
+            <Link href="/projects/programming" className="block">
               <div className="bg-[#f0f5f9] dark:bg-[#1a2029] rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow aspect-square flex items-center justify-center">
                 <div className="text-center p-4">
                   <div className="text-4xl mb-2">💻</div>
                   <div className={`${Mono.className} text-sm text-center dark:text-white`}>
-                    <div>engineer</div>
-                    <div>portfolio</div>
+                    <div>Lógica de Programação</div>
+                    <div>Básica</div>
                     <div className="text-[#e74c3c] text-xl font-bold mt-2">CAMP</div>
                   </div>
                 </div>

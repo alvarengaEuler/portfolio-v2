@@ -30,6 +30,16 @@ const projects = {
     link: "https://inkberry.example.com",
     technologies: ["React", "Firebase", "TypeScript"],
   },
+  programming: {
+    title: "Curso de Lógica de Programação Básica",
+    description: "Prepare-se para programar, criar e transformar ideias em soluções!",
+    longDescription:
+      "Aqui você aprende desde o zero, com exemplos que fazem sentido na sua rotina, como calcular seu IMC, planejar uma dieta saudável, organizar o treino e até criar seu próprio plano de alimentação e exercícios em formato de código! Tudo isso com linguagem simples, exercícios interativos e desafios reais..",
+    imageUrl: "/dieta.webp?height=500&width=500&text=🫐",
+    bgColor: "bg-[#f9f3e5] dark:bg-[#3b3020]",
+    link: "https://docs.google.com/document/d/1kYh8WIqDqoRtF7X_niqUhSdUrerU6dKKaIN2B3Wmzmc/edit?usp=sharing",
+    technologies: ["Algoritmos", "Visualg", "Portugol", "Python"],
+  },
   // Other projects...
 }
 
@@ -79,13 +89,13 @@ export default function ProjectPage(){
           <ThemeToggle />
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-8 md:p-12 transition-colors duration-300">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <div className={`${project.bgColor} rounded-2xl p-8 flex items-center justify-center aspect-square`}>
+        <div className="bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-sm p-6 md:p-12 transition-colors duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start ">
+            <div className={`${project.bgColor} rounded-2xl p-4 flex items-center justify-center aspect-square `}>
               <Image
                 src={project.imageUrl || "/placeholder.svg"}
                 alt={project.title}
-                className="w-3/4 h-3/4 object-contain"
+                className="w-[90%] h-[90%] object-contain"
                 width={500}
                 height={500}
               />
